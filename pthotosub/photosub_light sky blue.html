@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Lan YAO</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="dog_logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <style>
+        div {
+            float: left;
+        }
+
+        .draw {
+            /* 子绝父相 */
+            position: relative;
+            width: 320px;
+            height: 400px;
+            background-color: none;
+            margin: 1px 1px;
+
+        }
+
+        .draw img {
+
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+
+        }
+
+        .draw::before {
+            content: "";
+            /* 隐藏且不占有原来的位置,即下面的图片 */
+            display: none;
+            /* 希望盖在tudou上面，则用absolute */
+            position: absolute;
+            /* 根据父亲的定位来变化 */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            /* 直接将播放箭头添加到背景图片中 */
+            background: rgba(0, 0, 0, .1) url(arrow.png) no-repeat center;
+        }
+
+        /* 当鼠标经过tudou盒子，让里面的mask，即before遮罩层显示出来，播放按钮是mask的背景图片，所以是一体的 */
+        /* 冒号前后不能有空格 */
+        .draw:hover::before {
+            /* 不是转换块元素，而是显示元素的意思 */
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header 横向-->
+                <header id="header">
+
+                    <ul class="icons">
+                        <li><a href="../index.html" class="logo"><strong>HOMEPAGE</strong></a></li>
+                        <li><a href="../reading.html" class="logo"><strong>READING</strong></a></li>
+                        <li><a href="../drawing.html" class="logo"><strong>DRAWING</strong></a></li>
+                        <li><a href="../photograph.html" class="logo"><strong>PTHOTOGRAPHY</strong></a></li>
+
+                    </ul>
+                </header>
+
+
+                <!-- Content -->
+                <section>
+
+                    <!-- Section 图文展示-->
+
+
+                    <header class="major">
+                        <h2>Light Sky Blue</h2>
+                    </header>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb2.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb3.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb1.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb4.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb5.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb6.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb7.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb8.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb9.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb10.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb11.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb12.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb13.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb14.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb15.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb16.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb17.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb18.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb19.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb20.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb21.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb22.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb23.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb24.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb25.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb26.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb27.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb28.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb29.jpeg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb30.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb31.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb32.jpg" alt=""></div>
+                    <div class="draw"> <img src="../images/photo/Spain/light blue/lightb33.jpg" alt=""></div>
+                    Spain/light blue/
+
+
+
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu 左边菜单-->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="photosub_black.html">🌌 Black</a></li>
+                        <li><a href="photosub_ocean bleu.html">🌃 Ocean blue</a></li>
+                        <li><a href="photosub_sunset.html">🌤 Sunset</a></li>
+                        <li><a href="photosub_deep sky blue.html">🗾 Deep sky blue</a></li>
+                        <li><a href="photosub_light sky blue.html">🌁 Light sky blue</a></li>
+                        <li><a href="photosub_cloud.html">⛅️ Cloud</a></li>
+                        <li><a href="photosub_green.html">🌻 Green</a></li>
+                        <li><a href="photosub_other.html">🌈 Other</a></li>
+
+                    </ul>
+                </nav>
+
+
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; 2021 by Lan YAO. All rights reserved.
+                </footer>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

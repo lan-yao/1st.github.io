@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Lan YAO</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="dog_logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <SCRIPT language=JavaScript> 
+
+        function password() {
+
+            var testV = 1;
+
+            var pass1 = prompt('please enter password / 请输入密码:', '');
+
+            while (testV < 3) {
+
+                if (!pass1)
+
+                    history.go(-1);
+
+                if (pass1 == "大哥开门是我") {
+
+                    alert('密码正确!');
+
+                    break;
+
+                }
+
+                testV += -1;
+
+                var pass1 = prompt('密码错误!请重新输入:');
+
+            }
+
+            if (pass1 != "password" & testV == 3)
+
+                history.go(-1);
+
+            return " ";
+
+        }
+
+        document.write(password());
+
+    </SCRIPT>
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header 横向-->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Homepage/首页</strong> </a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <p>内容涉及个人感情/经历/碎碎念，阅读需要密码。<br />
+                    </p>
+                    <hr class="major" />
+                    <header class="major">
+                        <h2>旧约</h2>
+                    </header>
+
+                    <div class="content">
+                        <h4><a href="biblenotes/csj.html">创世纪 -【创】Genesis </a></h4>
+
+
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu 左边菜单-->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage/首页</a></li>
+                        <li><a href="reading.html">Reading/阅读</a></li>
+                        <li><a href="bible.html">Bible notes/圣经笔记</a></li>
+                        <li><a href="drawing.html">Drawing/绘画</a></li>
+                        <li><a href="photograph.html">Photograph/摄影</a></li>
+                        <li>
+                            <span class="opener">Coding notes/前端笔记</span>
+                            <ul>
+                                <li><a href="code_htmlnotes.html">HTML notes</a></li>
+                                <li><a href="code_cssnotes.html">CSS</a></li>
+                                <li><a href="code_javas.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Section 联系方式-->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>If you have any questions, please feel free to drop me a line. I would be happy to answer your
+                        questions or set up a meeting with you. </p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:lanyao.fr@gmail.com?
+							subject=This is from your website&body=Hello Lan,">
+                                <p>lanyao.fr@gmail.com</p>
+                            </a></li>
+
+
+                        <li class="icon solid fa-comment">WeChat: ooh_makarioS </li>
+                        <li class="icon solid fa-home">Barcelona<br />
+                            Spain</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; 2021 by Lan YAO. All rights reserved.
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

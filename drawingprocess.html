@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Lan YAO</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="dog_logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        div {
+            float: left;
+        }
+
+        .draw {
+            /* 子绝父相 */
+            position: relative;
+            width: 302px;
+            height: 302px;
+            background-color: none;
+            margin: 1px 1px;
+
+        }
+
+        .draw img {
+
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+
+        }
+
+        .draw::before {
+            content: "";
+            /* 隐藏且不占有原来的位置,即下面的图片 */
+            display: none;
+            /* 希望盖在tudou上面，则用absolute */
+            position: absolute;
+            /* 根据父亲的定位来变化 */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            /* 直接将播放箭头添加到背景图片中 */
+            background: rgba(0, 0, 0, .1) url(arrow.png) no-repeat center;
+        }
+
+        /* 当鼠标经过tudou盒子，让里面的mask，即before遮罩层显示出来，播放按钮是mask的背景图片，所以是一体的 */
+        /* 冒号前后不能有空格 */
+        .draw:hover::before {
+            /* 不是转换块元素，而是显示元素的意思 */
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header 上面横向model-->
+                <header id="header">
+
+                    <ul class="icons">
+                        <li><a href="index.html" class="logo"><strong>HOMEPAGE</strong></a></li>
+                        <li><a href="reading.html" class="logo"><strong>READING</strong></a></li>
+                        <li><a href="drawing.html" class="logo"><strong>DRAWING</strong></a></li>
+                        <li><a href="photograph.html" class="logo"><strong>PTHOTOGRAPHY</strong></a></li>
+
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+
+                    <!-- Section 图文展示-->
+                    <p>“The hardest thing is not to paint, but to look at the world from another angle." <br />
+                        When I started to draw, I found that the rose I see contains purple, and the sunlight can add
+                        some green and dark blue to her. Many philosophers support the conclu that the best theory of
+                        colour is a form of anti-realism and they believe
+                        that color is entirely a psychological structure, not a physical feature of the world.<br />
+                    </p>So, how do I know my red is your red? What if what I call blue, you call red, and what I call
+                    red, you call yellow?</p>
+                    <p>科学家不创造任何东西，而是揭示自然界中现成的隐藏着的真实，艺术家创造真实的类似物。</p>
+                    <hr class="major" />
+
+                    <header class="major">
+                        <h2>Drawing Process</h2>
+                    </header>
+
+
+                    <div class="draw"> <img src="images/drawing/process/finished_7_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_7_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_7_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_7_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_7_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_6.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_7.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_8.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_9.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_10.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_11_11.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_6.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_7.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_12_8.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_6.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_7.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_13_8.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_6.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_7.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_8.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_9.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_12.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_10.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_14_11.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_1.jpeg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_2.jpeg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_4.jpeg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_5.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_7.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_6.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_15_3.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_21_4.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_21_1.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_21_2.jpg" alt=""></div>
+                    <div class="draw"> <img src="images/drawing/process/finished_21_3.jpg" alt=""></div>
+                    <video width="302" height="302" controls>
+                        <source src="images/drawing/process/finished_黄昏-短.mp4" type="video/mp4">
+                    </video>
+                    <video width="302" height="302" controls>
+                        <source src="images/drawing/process/finished_海上生明月-短.mp4" type="video/mp4">
+                    </video>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu 左边菜单-->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage/首页</a></li>
+                        <li><a href="reading.html">Reading/阅读</a></li>
+                        <li><a href="bible.html">Bible notes/圣经笔记</a></li>
+                        <li><a href="drawing.html">Drawing/绘画</a></li>
+                        <li><a href="photograph.html">Photograph/摄影</a></li>
+                        <li>
+                            <span class="opener">Coding notes/前端笔记</span>
+                            <ul>
+                                <li><a href="code_htmlnotes.html">HTML notes</a></li>
+                                <li><a href="code_cssnotes.html">CSS</a></li>
+                                <li><a href="code_javas.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Section 联系方式-->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>If you have any questions, please feel free to drop me a line. I would be happy to answer your
+                        questions or set up a meeting with you. </p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:lanyao.fr@gmail.com?
+							subject=This is from your website&body=Hello Lan,">
+                                <p>lanyao.fr@gmail.com</p>
+                            </a></li>
+
+
+                        <li class="icon solid fa-comment">WeChat: ooh_makarioS </li>
+                        <li class="icon solid fa-home">Barcelona<br />
+                            Spain</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; 2021 by Lan YAO. All rights reserved.
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
